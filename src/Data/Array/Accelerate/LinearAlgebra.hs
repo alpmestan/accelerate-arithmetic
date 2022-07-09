@@ -1,0 +1,35 @@
+{-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE FlexibleContexts #-}
+module Data.Array.Accelerate.LinearAlgebra (
+   LinAlg.Scalar,
+   LinAlg.Vector,
+   LinAlg.Matrix,
+   LinAlg.transpose,
+   LinAlg.numElems,
+   LinAlg.numRows,
+   LinAlg.numCols,
+   LinAlg.vectorShape,
+   LinAlg.matrixShape,
+   LinAlg.withVectorIndex,
+   LinAlg.withMatrixIndex,
+   LinAlg.outer,
+   LinAlg.multiplyMatrixVector,
+   LinAlg.multiplyMatrixMatrix,
+   LinAlg.newtonInverse,
+   LinAlg.newtonInverseStep,
+   LinAlg.identity,
+   LinAlg.scaleRows,
+   LinAlg.zipScalarVectorWith,
+   LinAlg.zipScalarMatrixWith,
+   LinAlg.columnFromVector,
+   LinAlg.vectorFromColumn,
+   LinAlg.flattenMatrix,
+   LinAlg.restoreMatrix,
+   LinAlg.extrudeVector,
+   LinAlg.extrudeMatrix,
+   LinAlg.zipExtrudedVectorWith,
+   LinAlg.zipExtrudedMatrixWith,
+   LinAlg.gatherFromVector,
+   ) where
+
+import qualified Data.Array.Accelerate.LinearAlgebra.Private as LinAlg
